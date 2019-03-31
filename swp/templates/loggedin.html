@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Calculator</title>
+</head>
+<body class="container" background="{{ url_for('static', filename='w.jpeg') }}" style="background-repeat:no-repeat; background-size:cover;">
+<h1 class="jumbotron" style="background-color: #1ea5ff">Welcome to the Tax calculator!</h1>
+<form class="form-group" method="post">
+<h3>Enter your Aadhar Card Number</h3>
+<strong>AADHAR</strong><input type="number" name="aadhar" class="form-control">
+<h3>Enter your Age</h3>
+<form class="form-group">
+<strong>AGE</strong><input type="number" name="age" class="form-control">
+<h3>Enter your Income in Lakhs</h3>
+<strong>INCOME</strong><input type="number" step="0.01" name="income" class="form-control">
+<div>	
+<button type="submit" style="margin-top:1%">Calculate my tax!</button>
+<h3>Want to see the your last calculation?<a href="/view">Click Here</a></h3>
+
+<h3>Do you want to log out ? <a href="/signout">Click here to logout!</a></h3>
+</div>
+<div style="border: 5px solid #1ea5ff;margin-top:3%">
+<ul>
+<h2>NOTE:</h2>
+<h4>You don't need to pay any tax if:</h4>
+<li style="color: red"><strong>Your age is <60 and Your income is <2.5 Lakhs</strong></li>
+<li style="color:red"><strong >Your age is between 60 & 80 and Your income is <3 Lakhs</strong></li>
+<li style="color:red"><strong>Your age is above 80 and Your income is <5 Lakhs</strong></li>
+</ul>
+</div>
+</form>
+</body>
+</html>
