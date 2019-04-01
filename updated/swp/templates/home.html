@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/mystyle.css') }}"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>Home Page</title>
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4d-lQsPUhEh3QEkiRFn2JGRZ1Tsg5EeUbG7-xwGrQBLR_8lFN">
+<!-- -->
+</head>
+<body>
+<strong><h1 style="font-family:verdana;"align="center">Welcome to Simplified Tax Returns Website!</h1></strong>
+<div>
+<ul>
+  <li><a class="active" href="/"><i class="fas fa-home"></i>HOME</a></li>
+  <li><a href="/save-tax"><i class="fas fa-info-circle"></i>TIPS TO SAVE TAX</a></li>
+  <li><a href="/signup"><i class="fas fa-user-plus"></i>SIGN UP!</a></li>
+  <li><a href="/login"><i class="fas fa-user-check"></i>LOGIN</a></li>
+  <li><a href="/contact"><i class="fas fa-question-circle"></i>CONTACT US</a></li>
+</ul>
+</div>
+<h2 style="padding:2%">Income Tax Calculation Made Easy</h2>
+  <div  class="padder"style="float:right;  padding-top: 2%; padding-left:5% " >
+    <img src="{{ url_for('static', filename='download.png') }}"height="450px"width="450px" >
+</div>
+<div class="row">
+	<div class="card column">
+  <img src="{{ url_for('static', filename='Income.jpg') }}"  style="height:75%;width:100%">
+  <div style="background-color:#1ea5ff;font-family:comic sans ms;"class="container">
+    <h3><strong><i class="fas fa-money-bill-wave"></i>A website that will reduce your effort to calculate tax!!</strong>
+    </h3>   
+</div>
+</div> 
+</div>
+<div >
+  <h2 style="font-family:verdana;"align="center" name="informat">INFORMATION REGARDING THE WEBSITE</h2>
+  <p class="info">
+    <img  id="image"src="{{ url_for('static', filename='desig.jpeg') }}">
+   <strong> This websiste has been designed and made by the efforts of Rakshit Malhotra ,Piyush kumar and Sakshi Gupta for the fulfillment of the project component of Software Engineering course in Vellore Institute of Technology. The website helps the users to calculate the tax accroding to their income slab and then our website redirects the users to the government</strong>
+     </p>
+</div>
+<div class="footer">
+  <a href="/" style="color: white">Home</a>
+  <a href="/contact"style="color: white">Contact Us</a>
+</div>
+</body>
+</html>

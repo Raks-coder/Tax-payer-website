@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <title>Login Page</title>
+  </head>
+  <body class="mycss" background="{{ url_for('static', filename='log.jpeg') }}" style="background-repeat:no-repeat; background-size:cover;">
+    <!-- <form method="post" class='container'>
+  		<h2 class="form-group jumbotron "><strong>Login</strong></h2>
+  		<ul>
+  			<li>
+  			<div class="form-group">
+  			<label for="firstname" style="color:white"><strong>Email</strong></label>
+  			<input type="email" name="Email">
+  		</div>
+  	</li>
+  	<li>
+  		<div class="form-group">
+  			<label for="lastname" style="color:white"><strong>Password</strong></label>
+  			<input type="password" name="Password">
+  		</div>
+  	</li>
+    <li> -->
+  <form method="post" class='container'>
+    <h2 class="jumbotron "><strong>LOGIN</strong></h2>
+    <div class="form-row">
+     <div class="form-group col-md-6">  
+      <div class="form-group">
+      <label for="lastname"><strong>Aadhar</strong></label>
+      <input type="text" class="form-control" name="aadhar" placeholder="Lastname" >
+    </div>
+      <div class="form-group">
+      <label for="firstname"><strong>Email</strong></label>
+      <input type="text" class="form-control" name="email" placeholder="First-name">
+    </div>
+    <div class="form-group">
+      <label for="lastname"><strong>Password</strong></label>
+      <input type="text" class="form-control" name="password" placeholder="Lastname" >
+    </div> 
+      <div class="form-group">
+          <label for="login" ><strong>Login<strong></label>
+          <input type="submit" class="form-control" name="Submit">
+      </div>
+    <a href="/recovery">Forgot Password?</a>
+
+    </li>
+  </body>
+</html>
+
+
+
+

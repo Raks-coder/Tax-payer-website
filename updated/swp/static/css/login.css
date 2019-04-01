@@ -1,0 +1,20 @@
+.jumbotron
+{
+    background-color: #1ea5ff;
+}
+
+.mycss
+{
+  width:100%;
+  height: 100%;
+  color:black;
+  font-weight:bold;
+  animation: myanimation 30s infinite;
+}
+@keyframes myanimation {
+  0% {background-color:#6699ff;}
+  25% {background-color:#33ccff;}
+  50% {background-color:#ff5050;}
+  75% {background-color: #ff9966;}
+  100% {background-color:#ccccff;}
+}
