@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Tax</title>
+</head>
+<body class="container" background="{{ url_for('static', filename='poke.jpeg') }}" style="background-repeat:no-repeat; background-size:cover;text-align: center">
+<h1 class="jumbotron container-fluid">The Tax you previously calculated is Rupees {{ tax }}</h1>
+<h2> To Return to the home page of the website <a href="/" style="color: blue">CLICK HERE!!</a></h2>
+<h2> To Go Back to the calculator <a href="/calculate">CLICK HERE!!</a>
+</body>
+</html>

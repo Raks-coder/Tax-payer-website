@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Previous Calculations</title>
+</head>
+<body class="conatiner" background="{{ url_for('static', filename='no.jpeg') }}" style="background-repeat:no-repeat; background-size:cover;">
+<h1>Submit Your Aadhar card number to check previous calculations!</h1>	
+<form method="post" class='container'>
+	<h2 class="jumbotron "><strong>Sign up</strong></h2>
+		<div class="form-row">
+		 	<div class="form-group col-md-6">	
+				<div class="form-group">
+					<label for="aadhar"><strong>Aadhar</strong></label>
+					<input type="number" class="form-control" name="aadhar" placeholder="AADHAR">
+				</div>
+			</div>
+		</div>
+<div class="form-group">
+	<button type="submit">SUBMIT!</button>
+</div>				
+</form>
+</body>
+</html>
