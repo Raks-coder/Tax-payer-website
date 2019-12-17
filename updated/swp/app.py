@@ -1,4 +1,3 @@
-# AUTHOR FOR BACKEND : Rakshit ,17BCE0941
 
 from flask import Flask,render_template,request,flash,redirect,url_for
 from flask_mongoalchemy import MongoAlchemy 
